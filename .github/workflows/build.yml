@@ -36,3 +36,12 @@ jobs:
         if: failure()
         run: echo "Code formatting issues found. Please run 'dotnet format' locally and commit the changes."
 
+      - name: Restore Dependencies
+        run: dotnet restore EC-Billing/EC-Billing.csproj
+
+      - name: Build Solution
+        run: dotnet build EC-Billing/EC-Billing.csproj --configuration Release --no-restore
+
+      - name: Run Tests
+        run: dotnet test EC-Billing/EC-Billing.csproj --no-restore --verbosity normal
+
