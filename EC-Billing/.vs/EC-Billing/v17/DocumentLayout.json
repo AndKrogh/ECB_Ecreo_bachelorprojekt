@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PCUser\\source\\repos\\EC-Billing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3481805F-EB76-49C3-BFED-44CB741E506D}|EC-Billing\\EC-Billing.csproj|c:\\users\\pcuser\\source\\repos\\ec-billing\\ec-billing\\components\\pages\\filename.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3481805F-EB76-49C3-BFED-44CB741E506D}|EC-Billing\\EC-Billing.csproj|solutionrelative:ec-billing\\components\\pages\\filename.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3481805F-EB76-49C3-BFED-44CB741E506D}|EC-Billing\\EC-Billing.csproj|c:\\users\\pcuser\\source\\repos\\ec-billing\\ec-billing\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3481805F-EB76-49C3-BFED-44CB741E506D}|EC-Billing\\EC-Billing.csproj|solutionrelative:ec-billing\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileName.razor",
+              "DocumentMoniker": "C:\\Users\\PCUser\\source\\repos\\EC-Billing\\EC-Billing\\Components\\Pages\\FileName.razor",
+              "RelativeDocumentMoniker": "EC-Billing\\Components\\Pages\\FileName.razor",
+              "ToolTip": "C:\\Users\\PCUser\\source\\repos\\EC-Billing\\EC-Billing\\Components\\Pages\\FileName.razor",
+              "RelativeToolTip": "EC-Billing\\Components\\Pages\\FileName.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T14:31:37.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\PCUser\\source\\repos\\EC-Billing\\EC-Billing\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "EC-Billing\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\PCUser\\source\\repos\\EC-Billing\\EC-Billing\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "EC-Billing\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-23T14:28:48.442Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

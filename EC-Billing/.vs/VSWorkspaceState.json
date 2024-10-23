@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "\\.github",
+    "\\.github\\workflows",
+    "\\EC-Billing",
+    "\\EC-Billing\\Components",
+    "\\EC-Billing\\Components\\Pages"
+  ],
+  "PreviewInSolutionExplorer": false
+}
