@@ -23,11 +23,11 @@ jobs:
         with:
           dotnet-version: '8' 
 
-      - name: Install dotnet format tool
+      - name: Install dotnet format
         run: dotnet tool install --global dotnet-format
 
-      - name: Add .NET tools to PATH
-        run: echo "::add-path::$(dotnet --list-tools | grep 'dotnet-format' | cut -d ' ' -f2)"
+      - name: Setup PATH for .NET tools
+        run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
         run: dotnet format --check
