@@ -30,7 +30,7 @@ jobs:
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
-        run: dotnet format \EC-Billing\Components\App.razor --check
+        run: dotnet format \EC-Billing\ --check
 
       - name: Fail on unformatted code
         if: failure()
