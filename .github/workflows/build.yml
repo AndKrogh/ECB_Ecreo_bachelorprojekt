@@ -43,5 +43,5 @@ jobs:
         run: dotnet build EC-Billing/EC-Billing.csproj --configuration Release --no-restore
 
       - name: Run Tests
-        run: dotnet test EC-Billing/EC-Billing.csproj --no-restore --verbosity normal
+        run: dotnet test EC-Billing/EC-Billing.csproj --no-restore --logger "console;verbosity=detailed"
 
