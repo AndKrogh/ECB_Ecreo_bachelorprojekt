@@ -30,7 +30,7 @@ jobs:
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
-        run: dotnet format path/to/your-solution.sln --check
+        run: dotnet format path/to/your-solution.sln --verify-no-changes
 
       - name: Fail on unformatted code
         if: failure()
