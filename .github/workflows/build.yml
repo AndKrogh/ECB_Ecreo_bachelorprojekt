@@ -30,11 +30,7 @@ jobs:
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
-        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes --verbosity diagnostic --include whitespace
-
-      - name: Show detailed formatting issues
-        if: failure()
-        run: dotnet format EC-Billing/EC-Billing.csproj
+        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes
 
       - name: Fail on unformatted code
         if: failure()
