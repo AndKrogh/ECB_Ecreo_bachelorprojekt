@@ -1,4 +1,4 @@
-﻿using EC_Billing.Components;
+using EC_Billing.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
