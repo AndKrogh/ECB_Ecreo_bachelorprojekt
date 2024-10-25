@@ -33,7 +33,7 @@ jobs:
         run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes --verbosity diagnostic
 
       - name: Run dotnet format on solution (.sln)
-        run: dotnet format ECB_Ecreo_bachelorprojekt/demo.sln --verify-no-changes --verbosity diagnostic
+        run: dotnet format demo.sln --verify-no-changes --verbosity diagnostic
 
       - name: Fail on unformatted code
         if: failure()
