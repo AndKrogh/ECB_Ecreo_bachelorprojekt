@@ -38,7 +38,3 @@ jobs:
       - name: Fail on unformatted code
         if: failure()
         run: echo "Code formatting issues found. Please run 'dotnet format' locally and commit the changes."
-          echo "Formatted Errors:"
-          cat format-output.log
-          cat format-output-sln.log
-
