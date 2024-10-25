@@ -1,4 +1,4 @@
-name: .NET Format Linter
+name: CI build
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
       - development
 
 jobs:
-  dotnet-format-lint:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
