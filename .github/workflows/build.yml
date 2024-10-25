@@ -30,7 +30,10 @@ jobs:
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
-        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes
+        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes --verbosity diagnostic
+
+      - name: Run dotnet format on solution (.sln)
+        run: dotnet format EC-Billing.sln --verify-no-changes --verbosity diagnostic
 
       - name: Fail on unformatted code
         if: failure()
