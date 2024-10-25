@@ -38,8 +38,21 @@ jobs:
 
       - name: Fail on unformatted code
         if: failure()
-        run: echo "Code formatting issues found. Please run 'dotnet format' locally and commit the changes."
-          echo "Formatted Errors:"
-          steps.format-code.outputs.error 
-          steps.format-sln.outputs.error }
+        run: 
+          if [[ -s format-output.log ]]; then
+            echo "Code formatting issues found in EC-Billing.csproj:"
+            cat format-output.log
+            echo "Formatting errors detected in EC-Billing.csproj."
+          fi
+          
+          if [[ -s format-output-sln.log ]]; then
+            echo "Code formatting issues found in demo.sln:"
+            cat format-output-sln.log
+            echo "Formatting errors detected in demo.sln."
+          fi
+
+          if [[ -s format-output.log || -s format-output-sln.log ]]; then
+            echo "Please run 'dotnet format' locally and commit the changes."
+            exit 1
+          fi
 
