@@ -30,10 +30,11 @@ jobs:
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
-        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes --verbosity diagnostic || echo "Error in formatting EC-Billing.csproj"
+        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes --verbosity diagnostic > format-output.log || (cat format-output.log; echo "Formatting errors detected in EC-Billing.csproj." && exit 1)
 
       - name: Run dotnet format on solution (.sln)
-        run: dotnet format demo.sln --verify-no-changes --verbosity diagnostic || echo "Error in formatting demo.sln"
+        run: dotnet format demo.sln --verify-no-changes --verbosity diagnostic > format-output-sln.log || (cat format-output-sln.log; echo "Formatting errors detected in demo.sln." && exit 1)
+
 
       - name: Fail on unformatted code
         if: failure()
