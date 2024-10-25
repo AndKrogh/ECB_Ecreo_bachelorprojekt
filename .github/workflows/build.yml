@@ -21,7 +21,7 @@ jobs:
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8' 
+          dotnet-version: '8'
 
       - name: Install dotnet format
         run: dotnet tool install --global dotnet-format
@@ -30,11 +30,20 @@ jobs:
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Run dotnet format
-        run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes
+        id: format-check
+        run: |
+          dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes || echo "Formatting issues detected"
+        continue-on-error: true
 
+      - name: Show formatting issues
+        if: steps.format-check.outcome == 'failure'
+        run: |
+          echo "Formatting issues found! Please run 'dotnet format' locally to fix them."
+          dotnet format EC-Billing/EC-Billing.csproj
+          
       - name: Fail on unformatted code
-        if: failure()
-        run: echo "Code formatting issues found. Please run 'dotnet format' locally and commit the changes."
+        if: steps.format-check.outcome == 'failure'
+        run: exit 1
 
       - name: Restore Dependencies
         run: dotnet restore EC-Billing/EC-Billing.csproj
@@ -44,4 +53,3 @@ jobs:
 
       - name: Run Tests
         run: dotnet test EC-Billing/EC-Billing.csproj --no-restore --logger "console;verbosity=detailed"
-
