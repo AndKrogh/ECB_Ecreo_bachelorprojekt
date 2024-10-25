@@ -39,6 +39,6 @@ jobs:
         if: failure()
         run: echo "Code formatting issues found. Please run 'dotnet format' locally and commit the changes."
           echo "Formatted Errors:"
-          echo "${{ steps.format-output.log }}"
-          echo "${{ steps.format-output-sln.log }}"
+          cat format-output.log
+          cat format-output-sln.log
 
