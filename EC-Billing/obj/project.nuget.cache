@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BElqeHXrVJk=",
+  "dgSpecHash": "pNTrEpK6Ing=",
   "success": true,
-  "projectFilePath": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\Ec-Billing.csproj",
+  "projectFilePath": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\EC-Billing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PCUser\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
     "C:\\Users\\PCUser\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",

@@ -46,50 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXEFwcC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXFBhZ2VzXENvdW50ZXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXFBhZ2VzXEVycm9yLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Pages/FileName.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXFBhZ2VzXEZpbGVOYW1lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXFBhZ2VzXEhvbWUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXFBhZ2VzXFdlYXRoZXIucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXFJvdXRlcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXF9JbXBvcnRzLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-qvhus9ym3d
+build_metadata.AdditionalFiles.CssScope = b-xzyb6b77lb
 
 [A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-yax0at1ct2
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXExheW91dFxNYWluTGF5b3V0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-q2yo1gupsl
-
-[A:/bachelorprojekt/ECB_Ecreo_bachelorprojekt/EC-Billing/EC-Billing/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = RUMtQmlsbGluZ1xDb21wb25lbnRzXExheW91dFxOYXZNZW51LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-j50ds9tlso
+build_metadata.AdditionalFiles.CssScope = b-mthuyhdkqz

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\Ec-Billing.csproj": {}
+    "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\EC-Billing.csproj": {}
   },
   "projects": {
-    "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\Ec-Billing.csproj": {
+    "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\EC-Billing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\Ec-Billing.csproj",
-        "projectName": "Ec-Billing",
-        "projectPath": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\Ec-Billing.csproj",
+        "projectUniqueName": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\EC-Billing.csproj",
+        "projectName": "EC-Billing",
+        "projectPath": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\EC-Billing.csproj",
         "packagesPath": "C:\\Users\\PCUser\\.nuget\\packages\\",
         "outputPath": "A:\\bachelorprojekt\\ECB_Ecreo_bachelorprojekt\\EC-Billing\\obj\\",
         "projectStyle": "PackageReference",
