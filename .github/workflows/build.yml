@@ -32,6 +32,9 @@ jobs:
       - name: Run dotnet format
         run: dotnet format EC-Billing/EC-Billing.csproj --verify-no-changes --verbosity diagnostic
 
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
       - name: Setup PATH for .NET tools
         run: echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
