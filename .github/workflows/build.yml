@@ -38,4 +38,7 @@ jobs:
       - name: Fail on unformatted code
         if: failure()
         run: echo "Code formatting issues found. Please run 'dotnet format' locally and commit the changes."
+          echo "Formatted Errors:"
+          echo "${{ steps.format-code.outputs.error }}"
+          echo "${{ steps.format-sln.outputs.error }}"
 
