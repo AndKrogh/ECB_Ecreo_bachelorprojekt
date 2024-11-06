@@ -11,7 +11,7 @@ builder.Services.AddRazorComponents()
 builder.Services.AddDbContext<EcBillingContext>(options =>
 {
 	options.UseSqlServer(
-		"Server=tcp:ec-billing-server.database.windows.net,1433;Database=EC_Billing_Db;User Id=ec_billing_admin;Password=Harringoth29!;TrustServerCertificate=True;",
+		"",
 		sqlServerOptions => sqlServerOptions.EnableRetryOnFailure(
 			maxRetryCount: 5,
 			maxRetryDelay: TimeSpan.FromSeconds(10),
