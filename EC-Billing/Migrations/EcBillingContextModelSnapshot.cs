@@ -40,12 +40,31 @@ namespace ECBilling.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("LastName")
-                        .HasColumnType("int");
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Senior Developer",
+                            EmployeeId = 1001,
+                            FirstName = "Alice",
+                            LastName = "Johnson"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Project Manager",
+                            EmployeeId = 1002,
+                            FirstName = "Bob",
+                            LastName = "Smith"
+                        });
                 });
 #pragma warning restore 612, 618
         }
