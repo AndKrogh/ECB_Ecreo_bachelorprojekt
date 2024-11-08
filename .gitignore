@@ -3,6 +3,5 @@
 ################################################################################
 
 /.vs/
-.json
 /EC-Billing/appsettings.json
 /EC-Billing/appsettings.Development.json

@@ -8,8 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
 .AddInteractiveServerComponents();
 
-var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING")
-					   ?? builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
 
 // Register the DbContext with the resolved connection string
 builder.Services.AddDbContext<EcBillingContext>(options =>
