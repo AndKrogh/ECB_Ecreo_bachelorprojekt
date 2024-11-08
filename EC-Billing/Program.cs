@@ -8,16 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
 .AddInteractiveServerComponents();
 
-builder.Services.AddDbContext<EcBillingContext>(options =>
-{
-	options.UseSqlServer(
-		"",
-		sqlServerOptions => sqlServerOptions.EnableRetryOnFailure(
-			maxRetryCount: 5,
-			maxRetryDelay: TimeSpan.FromSeconds(10),
-			errorNumbersToAdd: null
-		));
-});
+var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING")
+					   ?? builder.Configuration.GetConnectionString("DefaultConnection");
+
+// Register the DbContext with the resolved connection string
+builder.Services.AddDbContext<MyDbContext>(options =>
+	options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
