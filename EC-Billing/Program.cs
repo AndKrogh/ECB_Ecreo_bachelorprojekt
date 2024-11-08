@@ -12,7 +12,7 @@ var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING"
 					   ?? builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Register the DbContext with the resolved connection string
-builder.Services.AddDbContext<MyDbContext>(options =>
+builder.Services.AddDbContext<EcBillingContext>(options =>
 	options.UseSqlServer(connectionString));
 
 var app = builder.Build();
