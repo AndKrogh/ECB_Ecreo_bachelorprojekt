@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EC-Billing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c895eb6cf0d6ed0cfb129a0fba1dfb2fcee2bf22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b29b3b1e8df90bda7029885d08bc7f81b65c7c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EC-Billing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EC-Billing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

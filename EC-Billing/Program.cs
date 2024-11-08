@@ -1,6 +1,6 @@
 using EC_Billing.Components;
-using ECBilling.Model;
 using Microsoft.EntityFrameworkCore;
+using Models.DbEntities;
 
 var builder = WebApplication.CreateBuilder(args);
 
