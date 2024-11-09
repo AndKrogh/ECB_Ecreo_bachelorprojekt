@@ -8,13 +8,16 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
 .AddInteractiveServerComponents();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
-
-// Register the DbContext with the resolved connection string
 builder.Services.AddDbContext<EcBillingContext>(options =>
-	options.UseSqlServer(connectionString));
-
-var app = builder.Build();
+{
+	options.UseSqlServer(
+		"Server=tcp:ec-billing-server.database.windows.net,1433;Initial Catalog=EC_Billing_Db;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Default\";",
+		sqlServerOptions => sqlServerOptions.EnableRetryOnFailure(
+			maxRetryCount: 3,
+			maxRetryDelay: TimeSpan.FromSeconds(10),
+			errorNumbersToAdd: null
+		));
+}); var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
