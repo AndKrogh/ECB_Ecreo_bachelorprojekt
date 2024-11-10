@@ -15,5 +15,9 @@ namespace EcBilling.Models
 		public string Description { get; set; }
 
 		public int EmployeeId { get; set; }
+		public string FullName
+		{
+			get { return FirstName + " " + LastName; }
+		}
 	}
 }
