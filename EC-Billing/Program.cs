@@ -1,12 +1,13 @@
-using EC_Billing.Components;
 using Microsoft.EntityFrameworkCore;
 using Models.DbEntities;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllersWithViews();
+
 // Add services to the container.
-builder.Services.AddRazorComponents()
-.AddInteractiveServerComponents();
+//builder.Services.AddRazorComponents()
+//.AddInteractiveServerComponents();
 
 builder.Services.AddDbContext<EcBillingContext>(options =>
 {
@@ -17,7 +18,9 @@ builder.Services.AddDbContext<EcBillingContext>(options =>
 			maxRetryDelay: TimeSpan.FromSeconds(10),
 			errorNumbersToAdd: null
 		));
-}); var app = builder.Build();
+});
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -32,7 +35,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.MapRazorComponents<App>()
-	.AddInteractiveServerRenderMode();
+//app.MapRazorComponents<App>()
+//	.AddInteractiveServerRenderMode();
+
+app.MapControllerRoute(
+	name: "default",
+	pattern: "{controller=Employee}/{action=Index}/{id?}");
 
 app.Run();
