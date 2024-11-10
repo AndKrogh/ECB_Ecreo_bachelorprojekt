@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace EcBilling.Models
+namespace EmployeeData.Models
 {
 	public class EmployeeViewModel
 	{
@@ -15,6 +15,8 @@ namespace EcBilling.Models
 		public string Description { get; set; }
 
 		public int EmployeeId { get; set; }
+
+		[DisplayName("Name")]
 		public string FullName
 		{
 			get { return FirstName + " " + LastName; }
