@@ -27,6 +27,7 @@ namespace ECBilling.Controllers
 						FirstName = employee.FirstName,
 						LastName = employee.LastName,
 						Description = employee.Description,
+						EmployeeId = employee.EmployeeId,
 					};
 
 					employeeList.Add(EmployeeViewModel);
