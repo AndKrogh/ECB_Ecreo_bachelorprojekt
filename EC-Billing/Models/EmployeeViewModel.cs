@@ -6,10 +6,14 @@ namespace EcBilling.Models
 	{
 		public int Id { get; set; }
 
-		[DisplayName("Name")]
-		public string Name { get; set; }
+		[DisplayName("First Name")]
+		public string FirstName { get; set; }
+
+		[DisplayName("Last Name")]
+		public string LastName { get; set; }
 
 		public string Description { get; set; }
+
 		public int EmployeeId { get; set; }
 	}
 }
