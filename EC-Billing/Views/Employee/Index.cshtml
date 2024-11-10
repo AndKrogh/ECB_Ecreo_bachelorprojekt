@@ -1,4 +1,4 @@
-﻿@model List<Models.DbEntities.Employee>
+﻿@model List<EmployeeData.Models.EmployeeViewModel>
 
 @{
     ViewData["Title"] = "Employee details";
@@ -23,12 +23,22 @@
                 @foreach(var employee in Model)
                 {
                     <tr>
-
+                        <td>@employee.Id</td>
+                        <td>@employee.FullName</td>
+                        <td>@employee.Description</td>
+                        <td>@employee.EmployeeId</td>
                     </tr>
                 }   
             } else
             {
-                
+                <tr>
+                    <td colspan="6">
+                        <div>
+                            <p>No employees available</p>
+                        </div>
+                    </td>
+                   
+                </tr>
             }
         </tbody>
     </table>

@@ -1,3 +1,4 @@
+using EmployeeData.Models;
 using Microsoft.AspNetCore.Mvc;
 using Models.DbEntities;
 
@@ -13,7 +14,26 @@ namespace ECBilling.Controllers
 		public IActionResult Index()
 		{
 			var employees = _context.Employees.ToList();
-			return View(employees);
+
+			if (employees != null)
+			{
+
+				List<EmployeeViewModel> employeeList = new List<EmployeeViewModel>();
+				foreach (var employee in employees)
+				{
+					var EmployeeViewModel = new EmployeeViewModel()
+					{
+						Id = employee.Id,
+						FirstName = employee.FirstName,
+						LastName = employee.LastName,
+						Description = employee.Description,
+					};
+
+					employeeList.Add(EmployeeViewModel);
+				}
+				return View(employeeList);
+			}
+			return View();
 		}
 	}
 }
