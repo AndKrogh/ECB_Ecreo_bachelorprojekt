@@ -4,7 +4,7 @@ namespace ECBilling.Services
 {
 	public interface IGetEmployeesService
 	{
-		Task<List<Employee>> GetEmployeesAsync();
+		Task<IEnumerable<Employee>> GetEmployeesAsync();
 
 	}
 }

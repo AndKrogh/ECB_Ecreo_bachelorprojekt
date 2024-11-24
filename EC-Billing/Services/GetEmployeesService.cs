@@ -13,7 +13,7 @@ namespace ECBilling.Services
 			_context = context;
 		}
 
-		public async Task<List<Employee>> GetEmployeesAsync()
+		public async Task<IEnumerable<Employee>> GetEmployeesAsync()
 		{
 			return await _context.Employees.ToListAsync();
 		}
