@@ -1,13 +1,16 @@
+using EC_Billing.Components;
+using ECBilling.Startup;
 using Microsoft.EntityFrameworkCore;
-using Models.DbEntities;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-// Add services to the container.
-//builder.Services.AddRazorComponents()
-//.AddInteractiveServerComponents();
+//Add services to the container.
+builder.Services.AddRazorComponents()
+.AddInteractiveServerComponents();
+
+builder.Services.AddApplicationServices();
 
 builder.Services.AddDbContext<EcBillingContext>(options =>
 {
@@ -35,8 +38,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-//app.MapRazorComponents<App>()
-//	.AddInteractiveServerRenderMode();
+app.MapRazorComponents<App>()
+	.AddInteractiveServerRenderMode();
 
 app.MapControllerRoute(
 	name: "default",

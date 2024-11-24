@@ -10,14 +10,14 @@ namespace Models.DbEntities
 
 		[Required]
 		[MaxLength(50)]
-		public string FirstName { get; set; }
+		public string? FirstName { get; set; }
 
 		[Required]
 		[MaxLength(50)]
-		public string LastName { get; set; }
+		public string? LastName { get; set; }
 
-		public string Title { get; set; }
-		public string Department { get; set; }
+		public string? Title { get; set; }
+		public string? Department { get; set; }
 		public bool Availability { get; set; }
 		public int VacationDays { get; set; }
 
@@ -27,10 +27,10 @@ namespace Models.DbEntities
 			get { return FirstName + " " + LastName; }
 		}
 
-		public SkillCard SkillCard { get; set; }
+		public SkillCard? SkillCard { get; set; }
 
-		public ICollection<EmployeeTask> EmployeeTasks { get; set; }
-		public ICollection<EmployeeSkill> EmployeeSkills { get; set; }
-		public ICollection<Project> Projects { get; set; }
+		public ICollection<EmployeeTask>? EmployeeTasks { get; set; }
+		public ICollection<EmployeeSkill>? EmployeeSkills { get; set; }
+		public ICollection<Project>? Projects { get; set; }
 	}
 }

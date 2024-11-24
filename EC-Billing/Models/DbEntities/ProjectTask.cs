@@ -11,9 +11,9 @@ namespace Models.DbEntities
 		[ForeignKey(nameof(Project))]
 		public int ProjectID { get; set; }
 
-		public string TaskDetail { get; set; }
+		public string? TaskDetail { get; set; }
 
-		public Project Project { get; set; }
-		public ICollection<EmployeeTask> EmployeeTasks { get; set; }
+		public Project? Project { get; set; }
+		public ICollection<EmployeeTask>? EmployeeTasks { get; set; }
 	}
 }

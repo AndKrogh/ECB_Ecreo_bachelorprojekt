@@ -8,8 +8,8 @@ namespace Models.DbEntities
 		[Key, ForeignKey(nameof(Employee))]
 		public int EmployeeID { get; set; }
 
-		public string SkillsData { get; set; }
+		public string? SkillsData { get; set; }
 
-		public Employee Employee { get; set; }
+		public Employee? Employee { get; set; }
 	}
 }

@@ -13,9 +13,9 @@ namespace Models.DbEntities
 		public int TaskID { get; set; }
 
 		public DateTime AssignedDate { get; set; }
-		public string RoleInTask { get; set; }
+		public string? RoleInTask { get; set; }
 
-		public Employee Employee { get; set; }
-		public ProjectTask ProjectTask { get; set; }
+		public Employee? Employee { get; set; }
+		public ProjectTask? ProjectTask { get; set; }
 	}
 }

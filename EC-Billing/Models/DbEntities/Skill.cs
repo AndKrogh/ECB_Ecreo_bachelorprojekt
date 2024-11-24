@@ -9,8 +9,8 @@ namespace Models.DbEntities
 
 		[Required]
 		[MaxLength(100)]
-		public string SkillName { get; set; }
+		public string? SkillName { get; set; }
 
-		public ICollection<EmployeeSkill> EmployeeSkills { get; set; }
+		public ICollection<EmployeeSkill>? EmployeeSkills { get; set; }
 	}
 }

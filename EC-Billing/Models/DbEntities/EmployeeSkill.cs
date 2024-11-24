@@ -12,7 +12,7 @@ namespace Models.DbEntities
 		[ForeignKey(nameof(Skill))]
 		public int SkillID { get; set; }
 
-		public Employee Employee { get; set; }
-		public Skill Skill { get; set; }
+		public Employee? Employee { get; set; }
+		public Skill? Skill { get; set; }
 	}
 }
