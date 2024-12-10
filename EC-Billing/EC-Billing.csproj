@@ -8,7 +8,15 @@
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
 	<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\**" />
+    <Content Remove="Views\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Views\**" />
+  </ItemGroup>
 	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
 		  <PrivateAssets>all</PrivateAssets>
@@ -19,11 +27,10 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.SemanticKernel" Version="1.32.0" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.32.0" />
 		<PackageReference Include="xunit" Version="2.9.2" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Views\" />
 	</ItemGroup>
 
 </Project>
