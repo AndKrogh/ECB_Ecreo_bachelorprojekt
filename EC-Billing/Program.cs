@@ -1,12 +1,16 @@
 using EC_Billing.Components;
+using ECBilling.Startup;
 using Microsoft.EntityFrameworkCore;
-using Models.DbEntities;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+//Add services to the container.
 builder.Services.AddRazorComponents()
 .AddInteractiveServerComponents();
+
+builder.Services.AddApplicationServices();
 
 builder.Services.AddDbContext<EcBillingContext>(options =>
 {
@@ -17,7 +21,9 @@ builder.Services.AddDbContext<EcBillingContext>(options =>
 			maxRetryDelay: TimeSpan.FromSeconds(10),
 			errorNumbersToAdd: null
 		));
-}); var app = builder.Build();
+});
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -34,5 +40,9 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
 	.AddInteractiveServerRenderMode();
+
+app.MapControllerRoute(
+	name: "default",
+	pattern: "{controller=Employee}/{action=Index}/{id?}");
 
 app.Run();
