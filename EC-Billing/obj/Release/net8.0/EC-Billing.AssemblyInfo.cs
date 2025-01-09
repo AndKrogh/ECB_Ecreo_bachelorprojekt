@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5c763267-fba6-46c6-81bd-d249d1d29ae0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EC-Billing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ddf521fa4e2f794dab41adee35774e7cfe57aeb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bb8254c9b49db669a8552e67864c6c262444583")]
 [assembly: System.Reflection.AssemblyProductAttribute("EC-Billing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EC-Billing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

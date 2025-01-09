@@ -7,6 +7,8 @@
     <RootNamespace>EC-Billing</RootNamespace>
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
 	<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	<UserSecretsId>5c763267-fba6-46c6-81bd-d249d1d29ae0</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +31,7 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.SemanticKernel" Version="1.32.0" />
 		<PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.32.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
 		<PackageReference Include="xunit" Version="2.9.2" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
 	</ItemGroup>

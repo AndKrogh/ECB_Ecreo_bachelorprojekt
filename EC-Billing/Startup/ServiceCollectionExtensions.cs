@@ -6,7 +6,6 @@ namespace ECBilling.Startup
 	{
 		public static IServiceCollection AddApplicationServices(this IServiceCollection services)
 		{
-			// Register your interfaces and services here
 			services.AddScoped<IGetEmployeesService, GetEmployeesService>();
 
 			return services;
